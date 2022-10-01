@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function Header(props) {
+function Header(props) {
     const { avatar, name, bio, location } = props;
 
     return (
@@ -19,3 +20,12 @@ export default function Header(props) {
         </header>
     );
 }
+
+Header.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    bio: PropTypes.string,
+    location: PropTypes.string,
+};
+
+export default Header;

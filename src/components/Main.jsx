@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class Main extends React.Component {
     render() {
@@ -13,5 +14,9 @@ class Main extends React.Component {
         );
     }
 }
+
+Main.propTypes = {
+    list: PropTypes.array,
+};
 
 export default Main;
